@@ -3,7 +3,7 @@
 <img src="https://img.shields.io/badge/made by-mir0173-red">
 <img src="https://img.shields.io/badge/Unity-6000.0.47f1-yellow">
 </p>
-<br/><br/><br/><br/>
+<br/>
 
 파이게임 후속작 <- 방학 프로젝트
 
