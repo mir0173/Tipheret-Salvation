@@ -59,7 +59,8 @@ public class StartSceneManager : MonoBehaviour
                 key = true;
                 if (Input.GetMouseButtonDown(0))
                 {
-                    SceneManager.LoadScene("Scene1");
+                    GameManager.B6_num = 0;
+                    SceneManager.LoadScene("B6Scene");
                 }
             }
             else if (MouseOnUI.gameObj.name == "LoadGame" && Issave == true)
