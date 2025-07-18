@@ -7,14 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class B6SceneManager : MonoBehaviour
 {
-
     public CanvasGroup fadeimg;
     public static float distance;
     public GameObject e;
     public GameObject player;
     public GameObject laddercheck;
     public GameObject enter;
-    public GameObject light;
+    public new GameObject light;
     public GameObject entercheck;
     public GameObject doorcheck;
     public GameObject lightcheck;
@@ -30,7 +29,7 @@ public class B6SceneManager : MonoBehaviour
     public static bool key3;
     public static bool key4;
     public static bool key5;
-    bool key6;
+
     void Start()
     {
         key = false;
@@ -38,7 +37,6 @@ public class B6SceneManager : MonoBehaviour
         key3 = false;
         key4 = false;
         key5 = false;
-        key6 = false;
         e.SetActive(false);
         enter.SetActive(false);
         light.SetActive(false);
@@ -64,10 +62,10 @@ public class B6SceneManager : MonoBehaviour
         {
             fadeimg.blocksRaycasts = false;
             Moving.isCanmove = true;
+            StartCoroutine(B6ScriptManager.Instance.PrintScriptNum(0, 2));
         });
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (key && GameManager.B6_num == 1)
